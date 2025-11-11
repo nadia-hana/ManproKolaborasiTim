@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Kelompok</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+            margin: 0;
+            padding: 0;
+        }
 
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            color: #313647;
+            margin-bottom: 10px;
+        }
+
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .member-card {
+            background: #D9CFC7;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .member-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.14);
+        }
+
+        .member-icon {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .member-card h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .role {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 12px;
+        }
+
+        .member-card a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #C9B59C;
+            color: black;
+            padding: 8px 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .member-card a:hover {
+            background-color: #C4A484;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Portofolio Kelompok 3</h1>
+        </div>
+
+        <div class="members-grid">
+            <div class="member-card">
+                <div class="member-icon">👩🏻‍💻</div>
+                <h3>Nadia</h3>
+                <a href="Nadia.html">Lihat Portofolio</a>
+            </div>
+
+            <div class="member-card">
+                <div class="member-icon">👩🏻‍💻</div>
+                <h3>Marwah Alika Salim</h3>
+                <a href="Alika.html">Lihat Portofolio</a>
+            </div>
+
+            <div class="member-card">
+                <div class="member-icon">👩🏻‍💻</div>
+                <h3>Berlian Gita Ayu Ferdian Santosa</h3>
+                <a href="Berlian.html">Lihat Portofolio</a>
+            </div>
+
+            <div class="member-card">
+                <div class="member-icon">👨🏻‍💻</div>
+                <h3>Cikal Anugerah</h3>
+                <a href="Cikal.html">Lihat Portofolio</a>
+            </div>
+
+        </div>
+
+    </div>
+</body>
