@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Kreatif Kami - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
+        line-height: 1.6;
+        color: #1e293b;
+        background-color: #eddcc7;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        }
+
+        img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        }
+
+        .container {
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 1rem;
+        }
+
+        .hero-section {
+        border-bottom: 1px solid #e2e8f0;
+        background: linear-gradient(to bottom, #ffffff, #fafafa);
+        }
+
+        .hero-content {
+        padding: 4rem 0;
+        text-align: center;
+        }
+
+        .hero-title {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #0f172a;
+        letter-spacing: -0.025em;
+        }
+
+        .hero-description {
+        font-size: 1.25rem;
+        color: #64748b;
+        max-width: 42rem;
+        margin: 0 auto;
+        }
+
+        .members-section {
+        padding: 4rem 0;
+        }
+
+        .member-card {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .member-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .member-photo {
+        width: 100%;
+        height: 200px;
+        background-color: white;
+        border: 1px solid #e2e8f0;
+        border-radius: 0.75rem;
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        overflow: hidden;
+        transition: all 0.2s ease;
+        }
+
+        .member-photo img {
+        width: 180px; 
+        height: 180px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 0.5rem; 
+        }
+
+        .member-content {
+        padding: 2rem;
+        }
+
+        .member-name {
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: #0f172a;
+        margin-bottom: 1.5rem;
+        }
+
+        .member-section {
+        margin-bottom: 1.5rem;
+        }
+
+        .section-title {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #64748b;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 0.75rem;
+        }
+
+        .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        }
+
+        .tag {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: #c9b59c;
+        color: #334155;
+        border-radius: 0.5rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        transition: all 0.2s ease;
+        }
+
+        .tag-secondary {
+        background-color: #c9b59c;
+        color: #334155;
+        }
+
+        @media (min-width: 640px) {
+            .hero-title {
+                font-size: 3.5rem;
+            }
+
+            .container {
+                padding: 0 1.5rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .members-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .activities-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-title {
+                font-size: 4rem;
+            }
+
+            .hero-content {
+                padding: 6rem 0;
+            }
+
+            .members-section {
+                padding: 6rem 0;
+            }
+
+            .activities-section {
+                padding: 6rem 0;
+            }
+
+            .container {
+                padding: 0 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Members Grid -->
+    <section class="members-section">
+        <div class="container">
+            <div class="members-grid">
+                <!-- Member 1 -->
+                <div class="member-card">
+                    <div class="member-photo">
+                        <img src="https://cdn.pixabay.com/photo/2017/06/27/06/49/lion-2446423_1280.jpg" alt="Cikal Anugerah R" class="foto">
+                    </div>
+                    <div class="member-content">
+                        <h2 class="member-name">Cikal Anugerah Ramadhan</h2>
+                        
+                        <div class="member-section">
+                            <h3 class="section-title">Keahlian</h3>
+                            <div class="tags">
+                                <span class="tag">DevOps</span>
+                                <span class="tag">Security</span>
+                            </div>
+                        </div>
+
+                        <div class="member-section">
+                            <h3 class="section-title">Hobi</h3>
+                            <div class="tags">
+                                <span class="tag tag-secondary">Gaming</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
